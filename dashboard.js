@@ -103,7 +103,7 @@ var myQuestions = true;
                 d: 'Modi'
 
             },
-            correctAnswer: 'a'
+            correctAnswer: 'b'
         }
         
     ];
@@ -326,8 +326,8 @@ var myQuestions = true;
 
 
 
-// var user_name = localStorage.getItem('userName');
-// document.getElementById("username").innerHTML=user_name;
+ var user_name = localStorage.getItem('userName');
+ document.getElementById("username").innerHTML='welcome - '+user_name;
 // var myQuestions = [
 //     {
 //         question: "What is 30*2?",
@@ -476,3 +476,4 @@ var myQuestions = true;
 //     }
 
 // }
+

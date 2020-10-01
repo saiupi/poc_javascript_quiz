@@ -126,7 +126,9 @@ button:hover {
     text-align: left;
 
 }
-
+#username{
+    color: #f1f1f1;
+}
 
 #number {
     position: absolute;
