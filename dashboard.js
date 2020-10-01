@@ -1,3 +1,4 @@
+var myQuestions = true;
 (function () {
 
     var myQuestions = [
@@ -6,7 +7,8 @@
             answers: {
                 a: '65',
                 b: '50',
-                c: '60'
+                c: '60',
+                d: '85'
             },
             correctAnswer: 'c'
         },
@@ -15,7 +17,8 @@
             answers: {
                 a: '30',
                 b: '40',
-                c: '50'
+                c: '50',
+                d: '85'
             },
             correctAnswer: 'b'
         },
@@ -24,7 +27,8 @@
             answers: {
                 a: '91',
                 b: '81',
-                c: '95'
+                c: '95',
+                d: '85'
             },
             correctAnswer: 'a'
         },
@@ -33,7 +37,8 @@
             answers: {
                 a: "Douglas Crockford",
                 b: "Sheryl Sandberg",
-                c: "Brendan Eich"
+                c: "Brendan Eich",
+                d: 'smith'
             },
             correctAnswer: "c"
         },
@@ -42,15 +47,70 @@
             answers: {
                 a: "Node.js",
                 b: "TypeScript",
-                c: "npm"
+                c: "npm",
+                d: 'cmd'
             },
             correctAnswer: "c"
         },
+        {
+            question: "What is 650/5?",
+            answers: {
+                a: '150',
+                b: '260',
+                c: '130',
+                d: '85'
+            },
+            correctAnswer: 'c'
+        },
+        {
+            question: "Find the average of square of first 5 consecutive natural numbers?",
+            answers: {
+                a: '11',
+                b: '15',
+                c: '25',
+                d: '85'
+            },
+            correctAnswer: 'a'
+        },
+        {
+            question: " What is the average of first five multiples of 12?",
+            answers: {
+                a: '55',
+                b: '25',
+                c: '36',
+                d: '85'
+
+            },
+            correctAnswer: 'c'
+        },
+        {
+            question: " who is prime minister of india?",
+            answers: {
+                a: 'Narendra Modi',
+                b: 'Manmohan Singh',
+                c: 'Rajiv Gandhi',
+                d: 'KCR'
+
+            },
+            correctAnswer: 'a'
+        },
+        {
+            question: "who is A.P CM?",
+            answers: {
+                a: 'Chndrababu Naidu',
+                b: 'YSR',
+                c: 'KCR',
+                d: 'Modi'
+
+            },
+            correctAnswer: 'a'
+        }
+        
     ];
     var interval = null
     //quiz timer function
     function timer() {
-        var counts = 60 * 5;
+        var counts = 60 *3;
 
         interval = setInterval(function () {
             var count = counts - 1
@@ -127,7 +187,7 @@
         quizContainer.innerHTML = output.join("");
     }
 
-
+    
     function showResults() {
         checkshowResults = true;
         // clearing timer
@@ -187,8 +247,8 @@
         // }
         resultsContainer.innerHTML = numCorrect + ' out of ' + myQuestions.length;
         {
-            numCorrect <= 2 ? document.getElementById("tryAgin").innerHTML = '<h3 class="text-danger">next time better luck</h3> <img src="dislike.png" width="100px"  height="100px">'
-            : document.getElementById("tryAgin").innerHTML = '<h3 class="text-info">Successfully</h3><img src="like.png" width="100px" height="100px" >'
+            numCorrect <= 4 ? document.getElementById("tryAgin").innerHTML = '<h3 class="text-danger"> better luck next time</h3> <img src="dislike.png" width="100px"  height="100px">'
+            : document.getElementById("tryAgin").innerHTML = '<h3 class="text-info">Great Job</h3><img src="like.png" width="100px" height="100px" >'
         }
 
 
