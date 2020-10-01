@@ -130,7 +130,8 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
         //     alert("try agin");
         //     document.getElementById("tryAgin").innerHTML=numCorrect+'Try Agin'
         // }
-        {numCorrect <=2 ?  document.getElementById("tryAgin").innerHTML='Try Agin' :  document.getElementById("tryAgin").innerHTML='successfully'}
+        {numCorrect <=2 ?  document.getElementById("tryAgin").innerHTML='<h3 class="text-danger">Not Qulified</h3> <img src="dislike.png" width="100px"  height="100px">' 
+        :  document.getElementById("tryAgin").innerHTML='<h3 class="text-info">Successfully</h3><img src="like.png" width="100px" height="100px" >'}
     }
 
     // show questions right away
