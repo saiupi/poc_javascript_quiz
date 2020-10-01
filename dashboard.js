@@ -1,3 +1,5 @@
+var user_name = localStorage.getItem('userName');
+document.getElementById("username").innerHTML=user_name;
 var myQuestions = [
     {
         question: "What is 30*2?",
@@ -70,7 +72,9 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
 
                 // ...add an html radio button
                 answers.push(
-                    '<label>'
+                  
+                    '<label style="padding:10px;margin-left:5px;">'
+                    
                     + '<input type="radio" name="question' + i + '" value="' + letter + '">'
                     + letter + ': '
                     + questions[i].answers[letter]
@@ -79,8 +83,8 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
             }
 
             // add this question and its answers to the output
-            output.push(
-                '<div class="question">' + questions[i].question + '</div>'
+            output.push(  
+                '<div class="question">'+ '<b>'+(i+1)+')' +'</b>&nbsp;&nbsp'+ questions[i].question + '</div>'
                 + '<div class="answers">' + answers.join('') + '</div>'
             );
         }
