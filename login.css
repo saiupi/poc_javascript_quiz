@@ -1,0 +1,23 @@
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+.guessSubmit {
+    background-image: linear-gradient(to right, #bd46a3 0%, #5c34c9 51%, #bd46a3 100%)}
+.guessSubmit {  
+    flex: 1 1 auto;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 1.7s ease;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 5px;  
+    padding: 5px;;
+}
+.table-padding{
+padding: 10px;
+border-collapse: inherit;
+
+}
+
