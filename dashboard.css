@@ -1,9 +1,9 @@
 .body-align{
     font-size: 20px;
     font-family: sans-serif;
-    color: #333;
+    color: #fff;
     padding: 80px;
-    background-color:rgb(230 230 230);
+
     
 }
 .question{
@@ -136,7 +136,7 @@ button:hover {
     top: 80px;
     width: 200px;
     height: 100px;
-    color: black;
+    color: #fff;
     size: 100px
 }
 
@@ -146,3 +146,13 @@ button:hover {
     padding: 10px;
     text-align: center;
 }
+.banner{
+    background-image: url("bg2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+ 
+  
+}
+   /* // background:url(https://static.pexels.com/photos/33972/pexels-photo.jpg)  } */

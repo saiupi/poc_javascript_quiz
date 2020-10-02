@@ -1,55 +1,46 @@
-.register{
-    background: -webkit-linear-gradient(left,#3931af,#00c6ff);
-    margin-top: 3%;
-    padding: 3%;
-    
-}
-.register-left{
-    text-align: center;
-    color:#fff;
-    margin-top: 4%;
-}
-.register-left input{
-    border:none;
-    border-radius: 1.5rem;
-    padding: 2%;
-    width: 60%;
-    background: #f8f9fa;
-    font-weight: bold;
-    color: #383d41;
-    margin-top: 30%;
-    margin-bottom: 3%;
-    cursor: pointer;
+/*  */
+.login-blk{
+    /* background: #DE6262;   */
+    /* fallback for old browsers */
+ background: linear-gradient(to bottom, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   position:absolute; 
+    height:100%; 
+    width:100%;
+     padding : 100px 0;
+ 
 
-}
-.login_form{
-    /* padding: 15%;
-    text-align: center;
-    padding-right: 50px;
-    bottom:45px; */
-    width: 60%;
-        margin-top: 100px;
-
-   
-}
-.register-button{
-    border:none;
-    border-radius: 1.5rem;
-    padding: 3%;
-    width: 60%;
-    background: #f8f9fa;
-    font-weight: bold;
-    color: #383d41;
-    margin-right: 117px;
-  
-    cursor: pointer;
-}
-a
-{
-    color:black;}
-a:hover
-{
-    color:white;}
-a.focus:link, a.focus:visited
-{color:red;
-background-color: aqua;}
+ }
+ 
+ .banner{background:url(https://static.pexels.com/photos/33972/pexels-photo.jpg)  
+  no-repeat left bottom; background-size:cover;
+   min-height:500px; 
+   border-radius: 0 10px 10px 0; 
+   padding:0;}
+ .container{
+     background:#fff; 
+     border-radius: 11px;
+      box-shadow:15px 20px 0px rgba(0,0,0,0.1);}
+ .login{
+     padding: 52px 31px; 
+     position:relative;
+    }
+  h2{margin-bottom:30px;
+     font-weight:802; 
+     font-size:29px; 
+     color: #DE6262;
+    }
+ h2:after{content:" ";
+     width:100px; height:5px;
+      background:#FEB58A;
+       display:block; 
+      margin-top:21px;
+       border-radius:4px; 
+      margin-left:auto;
+      margin-right:auto
+    }
+ .btn-login{
+     background: #DE6262;
+     color:#fff;
+      font-weight:600;
+    }
+ 

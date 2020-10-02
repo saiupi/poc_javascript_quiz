@@ -10,42 +10,42 @@
     <script src="login.js"></script>
 </head>
 
-    <body>
-        <div class="jumbotron jumbotron-fluid">
+<body>
+
+    <section class="login-blk">
+        <div class="container">
             <div class="row">
-                <div class="col">
-                </div>
-                <div class="col-6">
-                    <div class="card">
-                        <div class="card-header p-3 mb-2 bg-info text-white text-center">
-                           Login Form
-                        </div>
-                        <div class="card-body">
-                            <div class="form-group">
-                                <form method="post"  name="loginForm" action="dashboard.html" onsubmit="return loginSumbit()">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="userName" placeholder="User Name*"
-                                            value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text"  class="form-control" id="password" placeholder="Password*"
-                                            value="" />
-                                    </div>
-                                    <input type="submit" value="Login" class="guessSubmit">
-                                </form>
-                                <form action="registor.html"> 
-                                    <input type="submit" name=""  class="guessSubmit" value="Go To Register" /><br />
-                                </form>
-                            </div>
+                <div class="col-md-4 login">
+                    <h2 class="text-center">Login Now</h2>
+                    <form method="post" name="loginForm" action="dashboard.html" onsubmit="return loginSumbit()">
+
+
+                        <div class="form-group">
+                            <label>User Name</label>
+                            <input type="text" class="form-control" id="userName" placeholder="User Name*" value="" />
 
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="text" class="form-control" id="password" placeholder="Password*" value="" />
+
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" value="Login" class="guessSubmit">
+                        </div>
+                    </form>
+                    <form action="registor.html">
+                        <input type="submit" name="" class="guessSubmit" value="Go To Register" /><br />
+                    </form>
                 </div>
-                <div class="col">
-                   
+                <div class="col-md-8 banner">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    </div>
                 </div>
             </div>
         </div>
-    </body>
+    </section>
+</body>
 
 </html>
